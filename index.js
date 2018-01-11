@@ -13,6 +13,7 @@ wss.on('headers', (params, req) => {
 
 wss.on('error', (params) => {
   console.log('服务器 error:', params);
+  g_data.close = true;  
 });
 
 // socket
@@ -32,6 +33,7 @@ wss.on('connection', (ws, req) => {
 
   ws.on('error', (params) => {
     console.log('wsError:', params);
+    g_data.close = true;    
   });
 
   ws.on('close', (params) => {
