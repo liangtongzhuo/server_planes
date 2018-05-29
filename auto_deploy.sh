@@ -3,7 +3,7 @@
 # Ubuntu 定时执行 .sh 脚本
 # sudo vim /etc/crontab
 # 然后加入一下这行：
-# */1 * * * * cd root /home/ubuntu/code/server_planes && ./auto_deploy.sh > /dev/null
+# */1 * * * * cd ubuntu /home/ubuntu/code/server_planes && ./auto_deploy.sh > /dev/null
 
 git remote update
 
