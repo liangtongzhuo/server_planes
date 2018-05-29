@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Ubuntu 定时执行 .sh 脚本
 # sudo vim /etc/crontab
 # 然后加入一下这行：
@@ -15,5 +16,5 @@ if [ $LOCAL = $REMOTE ];then
  echo "up-to-date" > /dev/null
 else
  git checkout master
- git pull && npm install && pm2 reload server_planes #当前 pm2 运行的名字
+ git pull && npm install && sudo pm2 reload server_planes #当前 pm2 运行的名字
 fi
