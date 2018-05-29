@@ -2,7 +2,7 @@
 
 let g_data = { arr: [], wreck: [] }; //全局数据保存
 const ws = require('ws');
-const wss = new ws.Server({ port: 4001 }, () => {
+const wss = new ws.Server({ port: 1314 }, () => {
   console.log('服务器启动');
 });
 
