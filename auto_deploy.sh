@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # add the below line to crontab
-# */1 * * * * cd /home/ubuntu/code/server_planes && ./update.sh > /dev/null
+# */1 * * * * cd /home/ubuntu/code/server_planes && ./auto_deploy.sh > /dev/null
 
 git remote update
 
