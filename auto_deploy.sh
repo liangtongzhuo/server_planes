@@ -1,8 +1,8 @@
 #!/bin/bash
 # 目录下执行下列语句，后台启动 shell，日志输出到 auto_deploy.log
 # nohup ./auto_deploy.sh > auto_deploy.log 2>&1 &
-# jobs -l 查看后台运行的 shell 的 id，
-# kill id 杀死 脚步
+# jobs -l 查看后台运行的脚步的 id，
+# kill id 杀死脚本
 
 while true
 do
