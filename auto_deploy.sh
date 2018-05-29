@@ -13,5 +13,5 @@ if [ $LOCAL = $REMOTE ];then
  echo "up-to-date" > /dev/null
 else
  git checkout master
- git pull && npm install && sudo pm2 reload server_planes
+ git pull && npm install && sudo pm2 startOrReload server_planes #当前 pm2 运行的名字
 fi
