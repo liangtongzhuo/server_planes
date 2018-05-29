@@ -6,7 +6,6 @@
 # */1 * * * * cd ubuntu /home/ubuntu/code/server_planes && ./auto_deploy.sh > /dev/null
 # nohup ./auto_deploy.sh &
 
-
 while true
 do
   git remote update
